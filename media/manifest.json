@@ -1,0 +1,115 @@
+{
+  "note": "Scroll-film manifest. Each beat renders a still with Ken Burns motion. To use approved footage, add a frames object to a beat ({ dir, count, fps }) pointing at an extracted frame sequence under /media/frames/<id>/ and the engine scrubs real footage instead — no code changes needed. See ASSET-REPLACEMENT-GUIDE.md.",
+  "chapters": [
+    {
+      "id": "arrival",
+      "kicker": "01 — Arrival",
+      "title": "A destination rises",
+      "copy": "An aerial approach across Kuwait's horizon. Terracotta against the sand.",
+      "beats": [
+        {
+          "still": "media/stills/hero-day.jpg",
+          "weight": 1.5,
+          "scaleFrom": 1.0, "scaleTo": 1.28,
+          "focalFrom": [0.5, 0.32], "focalTo": [0.48, 0.62],
+          "frames": null
+        }
+      ]
+    },
+    {
+      "id": "discovery",
+      "kicker": "02 — Discovery",
+      "title": "Crafted in terracotta & light",
+      "copy": "Triangular breeze-block geometry, desert stone, and a facade that breathes.",
+      "beats": [
+        {
+          "still": "media/stills/facade-detail.jpg",
+          "weight": 1,
+          "scaleFrom": 1.3, "scaleTo": 1.0,
+          "focalFrom": [0.42, 0.55], "focalTo": [0.55, 0.42],
+          "frames": null
+        },
+        {
+          "still": "media/stills/entrance-night.jpg",
+          "weight": 1,
+          "scaleFrom": 1.0, "scaleTo": 1.22,
+          "focalFrom": [0.5, 0.45], "focalTo": [0.52, 0.55],
+          "frames": null
+        }
+      ]
+    },
+    {
+      "id": "entering",
+      "kicker": "03 — The Threshold",
+      "title": "Step into the vast",
+      "copy": "The bowl opens. Light systems ignite. Scale becomes atmosphere.",
+      "beats": [
+        {
+          "still": "media/stills/concert-cube.jpg",
+          "weight": 1.4,
+          "scaleFrom": 1.35, "scaleTo": 1.0,
+          "focalFrom": [0.5, 0.35], "focalTo": [0.5, 0.52],
+          "frames": null
+        }
+      ]
+    },
+    {
+      "id": "experience",
+      "kicker": "04 — The Experience",
+      "title": "Every format. Every energy.",
+      "copy": "Concerts, championships, exhibitions, culture and cuisine — one framework, endless programmes.",
+      "beats": [
+        {
+          "still": "media/stills/concert-seated.jpg",
+          "weight": 1,
+          "scaleFrom": 1.0, "scaleTo": 1.18,
+          "focalFrom": [0.5, 0.5], "focalTo": [0.45, 0.4],
+          "frames": null
+        },
+        {
+          "still": "media/stills/sports-court.jpg",
+          "weight": 1,
+          "scaleFrom": 1.22, "scaleTo": 1.0,
+          "focalFrom": [0.5, 0.6], "focalTo": [0.5, 0.42],
+          "frames": null
+        },
+        {
+          "still": "media/stills/expo-hall.jpg",
+          "weight": 1,
+          "scaleFrom": 1.0, "scaleTo": 1.2,
+          "focalFrom": [0.5, 0.55], "focalTo": [0.55, 0.4],
+          "frames": null
+        },
+        {
+          "still": "media/stills/lounge-desert.jpg",
+          "weight": 1,
+          "scaleFrom": 1.25, "scaleTo": 1.02,
+          "focalFrom": [0.3, 0.5], "focalTo": [0.6, 0.45],
+          "frames": null
+        }
+      ]
+    },
+    {
+      "id": "destination",
+      "kicker": "05 — The Destination",
+      "title": "Sahara Arena. Kuwait's stage.",
+      "copy": "Built around precision, resilience and long-term value. Lit for the years ahead.",
+      "beats": [
+        {
+          "still": "media/stills/dusk-glow.jpg",
+          "weight": 1,
+          "scaleFrom": 1.0, "scaleTo": 1.15,
+          "focalFrom": [0.5, 0.55], "focalTo": [0.5, 0.4],
+          "frames": null
+        },
+        {
+          "still": "media/stills/night-aerial.jpg",
+          "weight": 1.4,
+          "scaleFrom": 1.18, "scaleTo": 1.0,
+          "focalFrom": [0.35, 0.45], "focalTo": [0.42, 0.4],
+          "frames": null
+        }
+      ]
+    }
+  ]
+}

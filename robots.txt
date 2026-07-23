@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rakanivar-web.github.io/RakanSaharaArena2/sitemap.xml
