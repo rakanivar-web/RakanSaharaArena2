@@ -4,18 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>تسجيل الدخول — صحارى أرينا</title>
-  <meta name="description" content="سجّل الدخول إلى حسابك في صحارى أرينا لعرض حجوزاتك وتنزيل تذاكرك وإدارة بياناتك." />
+  <meta name="description" content="سجّل الدخول إلى حسابك في صحارى أرينا لحجز التذاكر وإدارة حجوزاتك." />
   <meta name="robots" content="noindex" />
   <link rel="canonical" href="https://rakanivar-web.github.io/RakanSaharaArena2/ar/login.html" />
   <link rel="alternate" hreflang="en" href="https://rakanivar-web.github.io/RakanSaharaArena2/login.html" />
   <link rel="alternate" hreflang="ar" href="https://rakanivar-web.github.io/RakanSaharaArena2/ar/login.html" />
-  <script type="module" crossorigin src="../assets/interior-CQL4g2r_.js"></script>
-  <link rel="stylesheet" crossorigin href="../assets/interior-gQNvoScx.css">
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="صحارى أرينا" />
+  <meta property="og:title" content="تسجيل الدخول — صحارى أرينا" />
+  <meta property="og:locale" content="ar_KW" />
+  <script type="module" crossorigin src="../assets/interior-CnQLaid0.js"></script>
+  <link rel="stylesheet" crossorigin href="../assets/interior-BtH19f2a.css">
 </head>
 <body>
-  <div class="design-ribbon">معاينة تصميم — الشكل فقط، وليست شاشة دخول فعلية</div>
   <div class="grain" aria-hidden="true"></div>
-
   <header class="nav">
     <a class="nav__brand" href="index.html" aria-label="صحارى أرينا — الرئيسية"><img class="logo-img logo-img--nav" src="../media/logo.png" alt="صحارى أرينا" /></a>
     <nav class="nav__links" aria-label="التنقل الرئيسي">
@@ -56,7 +58,7 @@
     </div>
   </aside>
 
-  <main class="auth">
+  <main class="auth" data-auth>
     <div class="auth__media">
       <img src="../media/stills/concert-cube.jpg" alt="تصور مفاهيمي: قاعة العروض في إنتاج كامل" />
       <div class="auth__media-copy">
@@ -67,70 +69,146 @@
 
     <div class="auth__panel">
       <div class="auth__card">
-        <img class="logo-img" src="../media/logo.png" alt="صحارى أرينا" />
+        <span class="eyebrow" data-ctx-eyebrow>أهلاً بك</span>
+        <h1 style="font-size:2rem;margin-top:0.6rem;" data-ctx-title>سجّل الدخول للمتابعة</h1>
+        <p class="hero__lede" style="font-size:0.94rem;margin-top:0.7rem;" data-ctx-lede>سجّل الدخول أو أنشئ حساباً لحجز التذاكر وإدارة حجوزاتك.</p>
 
-        <div class="auth-tabs" role="tablist" aria-label="الحساب">
-          <button class="auth-tab" role="tab" id="tab-login" aria-selected="true" data-auth-tab="login">تسجيل الدخول</button>
-          <button class="auth-tab" role="tab" id="tab-register" aria-selected="false" data-auth-tab="register">إنشاء حساب</button>
+        <div class="auth-tabs" role="tablist">
+          <button class="auth-tab" role="tab" aria-selected="true" data-tab="login">تسجيل الدخول</button>
+          <button class="auth-tab" role="tab" aria-selected="false" data-tab="register">إنشاء حساب</button>
         </div>
 
-        <form class="auth-panel" data-auth-panel="login" role="tabpanel" aria-labelledby="tab-login" novalidate>
-          <div class="form-field">
-            <label for="li-email">البريد الإلكتروني</label>
-            <input id="li-email" type="email" autocomplete="email" placeholder="you@example.com" dir="ltr" />
-          </div>
-          <div class="form-field">
-            <label for="li-pass">كلمة المرور</label>
-            <input id="li-pass" type="password" autocomplete="current-password" placeholder="••••••••" />
-          </div>
-          <div class="auth-row">
-            <label><input type="checkbox" /> تذكّرني</label>
-            <a href="#" data-auth-tab="forgot">نسيت كلمة المرور؟</a>
-          </div>
-          <button class="btn btn--solid btn--block" type="button">تسجيل الدخول</button>
-          <div class="auth__divider">أو</div>
-          <a class="btn btn--block" href="booking.html">المتابعة كضيف</a>
-          <p class="auth__alt">جديد في صحارى أرينا؟ <a href="#" data-auth-tab="register">أنشئ حساباً</a></p>
-        </form>
+        <section data-panel="login">
+          <!-- one field: email or mobile -->
+          <form class="auth-panel" data-view="identify" novalidate>
+            <div class="form-field">
+              <label for="ident">البريد الإلكتروني أو رقم الجوال</label>
+              <input id="ident" type="text" autocomplete="username" placeholder="you@example.com   أو   +965 0000 0000" />
+              <span class="field__err"></span>
+              <span class="field__hint" data-ident-hint>أدخل بريدك الإلكتروني لتسجيل الدخول بكلمة المرور، أو رقم جوالك لاستلام رمز عبر رسالة نصية.</span>
+            </div>
+            <button class="btn btn--solid btn--block" type="submit">متابعة</button>
+            <p class="auth__alt">جديد في صحارى أرينا؟ <a href="#" data-tab-link="register">أنشئ حساباً</a></p>
+          </form>
 
-        <form class="auth-panel" data-auth-panel="register" role="tabpanel" aria-labelledby="tab-register" hidden novalidate>
-          <div class="form-field">
-            <label for="rg-name">الاسم الكامل</label>
-            <input id="rg-name" type="text" autocomplete="name" placeholder="الاسم الأول والأخير" />
-          </div>
-          <div class="form-field">
-            <label for="rg-email">البريد الإلكتروني</label>
-            <input id="rg-email" type="email" autocomplete="email" placeholder="you@example.com" dir="ltr" />
-          </div>
-          <div class="form-field">
-            <label for="rg-phone">الهاتف</label>
-            <input id="rg-phone" type="tel" autocomplete="tel" placeholder="+965 …" dir="ltr" />
-          </div>
-          <div class="form-field">
-            <label for="rg-pass">كلمة المرور</label>
-            <input id="rg-pass" type="password" autocomplete="new-password" placeholder="8 أحرف على الأقل" />
-          </div>
-          <label class="auth-row" style="align-items:flex-start;">
-            <input type="checkbox" style="margin-top:0.2rem;" />
-            <span>أوافق على الشروط والأحكام وسياسة الخصوصية.</span>
-          </label>
-          <button class="btn btn--solid btn--block" type="button">إنشاء حساب</button>
-          <p class="auth__alt">لديك حساب بالفعل؟ <a href="#" data-auth-tab="login">سجّل الدخول</a></p>
-        </form>
+          <!-- email → password -->
+          <form class="auth-panel" data-view="password" hidden novalidate>
+            <button type="button" class="btn btn--ghost" data-back style="padding:0;font-size:0.82rem;letter-spacing:0;text-transform:none;margin-bottom:1rem;">← استخدم بريداً أو رقماً آخر</button>
+            <div class="ident-chip" data-chip-email></div>
+            <div class="form-field">
+              <label for="lp-pass">كلمة المرور</label>
+              <input id="lp-pass" type="password" autocomplete="current-password" placeholder="••••••••" />
+              <span class="field__err"></span>
+            </div>
+            <div style="display:flex;justify-content:flex-end;margin-bottom:1.2rem;">
+              <a href="#" style="font-size:0.84rem;color:var(--gold);">نسيت كلمة المرور؟</a>
+            </div>
+            <button class="btn btn--solid btn--block" type="submit">تسجيل الدخول</button>
+            <p class="auth__alt">تفضّل رمزاً؟ <a href="#" data-use-sms>أرسل رمزاً برسالة نصية</a></p>
+          </form>
 
-        <form class="auth-panel" data-auth-panel="forgot" role="tabpanel" hidden novalidate>
-          <h2 class="book-panel__title" style="font-size:1.3rem;">إعادة تعيين كلمة المرور</h2>
-          <p class="book-panel__sub">أدخل بريدك الإلكتروني وسنرسل رابط إعادة التعيين.</p>
-          <div class="form-field">
-            <label for="fp-email">البريد الإلكتروني</label>
-            <input id="fp-email" type="email" autocomplete="email" placeholder="you@example.com" dir="ltr" />
-          </div>
-          <button class="btn btn--solid btn--block" type="button">أرسل رابط إعادة التعيين</button>
-          <p class="auth__alt"><a href="#" data-auth-tab="login">العودة لتسجيل الدخول</a></p>
-        </form>
+          <!-- mobile → SMS code -->
+          <form class="auth-panel" data-view="otp" hidden novalidate>
+            <button type="button" class="btn btn--ghost" data-back style="padding:0;font-size:0.82rem;letter-spacing:0;text-transform:none;margin-bottom:1rem;">← استخدم بريداً أو رقماً آخر</button>
+            <div class="ident-chip" data-chip-phone></div>
+            <h3 style="color:var(--beige-tint);font-weight:400;font-size:1.15rem;margin-bottom:0.3rem;">أدخل الرمز</h3>
+            <p style="font-size:0.88rem;color:var(--stage-muted);margin-bottom:1.1rem;">أرسلنا رمزاً من ٦ أرقام برسالة نصية.</p>
+            <div class="otp">
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="رقم 1" />
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="رقم 2" />
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="رقم 3" />
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="رقم 4" />
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="رقم 5" />
+              <input type="text" inputmode="numeric" maxlength="1" aria-label="رقم 6" />
+            </div>
+            <span class="field__err" data-otp-err style="display:block;margin-bottom:0.6rem;"></span>
+            <div class="otp-meta">
+              <span>لم يصلك؟</span>
+              <a href="#" data-resend>إعادة إرسال الرمز</a>
+            </div>
+            <button class="btn btn--solid btn--block" type="submit" style="margin-top:1.2rem;">تحقّق وسجّل الدخول</button>
+            <p class="note" style="margin-top:1rem;">نموذج تصميمي: يُقبل أي ٦ أرقام. المسار الفعلي يتحقق من الرمز عبر مزوّد الرسائل.</p>
+          </form>
+        </section>
+
+        <!-- create account -->
+        <section data-panel="register" hidden>
+          <form class="auth-panel" data-view="signup" novalidate>
+            <div class="form-field">
+              <label for="rg-name">الاسم الكامل *</label>
+              <input id="rg-name" type="text" autocomplete="name" placeholder="الاسم الأول والأخير" />
+              <span class="field__err"></span>
+            </div>
+            <div class="form-field">
+              <label for="rg-email">البريد الإلكتروني *</label>
+              <input id="rg-email" type="email" autocomplete="email" placeholder="you@example.com" dir="ltr" />
+              <span class="field__err"></span>
+              <span class="field__hint">مطلوب — يُستخدم لتأكيدات الحجز.</span>
+            </div>
+            <div class="form-field">
+              <label for="rg-phone">رقم الجوال *</label>
+              <input id="rg-phone" type="tel" autocomplete="tel" placeholder="+965 0000 0000" dir="ltr" />
+              <span class="field__err"></span>
+              <span class="field__hint">مطلوب — يُستخدم لرموز الدخول وتحديثات الفعاليات.</span>
+            </div>
+            <div class="form-field">
+              <label for="rg-pass">كلمة المرور *</label>
+              <input id="rg-pass" type="password" autocomplete="new-password" placeholder="٨ أحرف على الأقل" />
+              <span class="field__err"></span>
+            </div>
+            <label class="form-consent">
+              <input type="checkbox" id="rg-terms" />
+              <span>أوافق على الشروط والأحكام وسياسة الخصوصية. *</span>
+            </label>
+            <span class="field__err" data-terms-err style="display:block;margin:-0.6rem 0 0.8rem;"></span>
+            <button class="btn btn--solid btn--block" type="submit">إنشاء حساب</button>
+            <p class="auth__alt">لديك حساب بالفعل؟ <a href="#" data-tab-link="login">سجّل الدخول</a></p>
+          </form>
+        </section>
       </div>
     </div>
   </main>
+
+  <div class="brand-band" aria-hidden="true"></div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <img class="logo-img logo-img--footer" src="../media/logo.png" alt="صحارى أرينا" />
+          <small class="footer__tag">أبرز صالة داخلية متعددة الاستخدامات في الكويت، في منتجع صحارى الكويت بصبحان — من شركة الجزيرة للتطوير العقاري.</small>
+        </div>
+        <div>
+          <h4>الزيارة</h4>
+          <ul>
+            <li><a href="events.html">الفعاليات</a></li>
+            <li><a href="visit.html">خطط لزيارتك</a></li>
+            <li><a href="faq.html">الأسئلة الشائعة</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>الشركة</h4>
+          <ul>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="host-an-event.html">استضف فعاليتك</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+            <li><a href="media.html">المركز الإعلامي</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>الصالة</h4>
+          <ul>
+            <li><a href="booking.html">احجز تذكرة</a></li>
+            <li><a href="login.html">تسجيل الدخول</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__base">
+        <span>© 2026 صحارى أرينا — شركة الجزيرة للتطوير العقاري، الكويت</span>
+        <span>حيث تنبض الكويت بالحياة</span>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

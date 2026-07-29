@@ -4,18 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Tickets — Sahara Arena</title>
-  <meta name="description" content="Your Sahara Arena account — upcoming tickets, downloads and details." />
+  <meta name="description" content="Your Sahara Arena account — upcoming tickets and account details." />
   <meta name="robots" content="noindex" />
   <link rel="canonical" href="https://rakanivar-web.github.io/RakanSaharaArena2/account.html" />
   <link rel="alternate" hreflang="en" href="https://rakanivar-web.github.io/RakanSaharaArena2/account.html" />
   <link rel="alternate" hreflang="ar" href="https://rakanivar-web.github.io/RakanSaharaArena2/ar/account.html" />
-  <script type="module" crossorigin src="./assets/interior-CQL4g2r_.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/interior-gQNvoScx.css">
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Sahara Arena" />
+  <meta property="og:title" content="My Tickets — Sahara Arena" />
+  <meta property="og:locale" content="en_US" />
+  <script type="module" crossorigin src="./assets/interior-CnQLaid0.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/interior-BtH19f2a.css">
 </head>
 <body>
-  <div class="design-ribbon">Design preview — sample account, not live data</div>
   <div class="grain" aria-hidden="true"></div>
-
   <header class="nav">
     <a class="nav__brand" href="index.html" aria-label="Sahara Arena — home"><img class="logo-img logo-img--nav" src="./media/logo.png" alt="Sahara Arena" /></a>
     <nav class="nav__links" aria-label="Primary">
@@ -56,41 +58,75 @@
     </div>
   </aside>
 
-  <section class="section" style="padding-top: clamp(7rem, 10vw, 9rem);">
+  <section class="section" style="padding-top: clamp(7rem, 10vw, 9rem);" data-account>
     <div class="container">
-      <div class="section__head">
-        <span class="eyebrow">My account</span>
-        <h2>Welcome back</h2>
-        <p>Your upcoming tickets and account details. In the live site this is populated from your account.</p>
-      </div>
-
-      <div style="display:flex; gap:0.8rem; border-bottom:1px solid var(--charcoal-line); margin-bottom:2rem;">
-        <span class="auth-tab" aria-selected="true">Upcoming</span>
-        <span class="auth-tab" style="color:var(--stage-muted);">Past</span>
-        <span class="auth-tab" style="color:var(--stage-muted);">Details</span>
-      </div>
-
-      <article class="mt-card">
-        <img class="mt-card__img" src="./media/stills/concert-cube.jpg" alt="" />
-        <div class="mt-card__body">
-          <span class="event-card__cat">Sample event</span>
-          <h3>Event title</h3>
-          <div class="mt-meta">Date to be announced · Main Bowl · 2 × VIP</div>
-        </div>
-        <div class="mt-card__actions">
-          <a class="btn btn--solid" href="#">Download tickets</a>
-          <a class="btn" href="#">Transfer</a>
-        </div>
-      </article>
-
-      <div class="mt-card" style="grid-template-columns:1fr; text-align:center; padding:2.4rem;">
+      <div style="display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;">
+        <span style="width:64px;height:64px;border-radius:50%;background:var(--brick);color:#fff;display:grid;place-items:center;font-size:1.4rem;font-weight:600;" data-initial>G</span>
         <div>
-          <p style="color:var(--stage-muted);">When the opening programme is announced, booked events appear here.</p>
-          <a class="btn btn--solid" href="events.html" style="margin-top:1.2rem;">Explore events</a>
+          <span class="eyebrow">My account</span>
+          <h2 style="margin-top:0.4rem;">Welcome back, <span data-name></span></h2>
         </div>
+      </div>
+
+      <div class="panel" style="background:var(--charcoal-raised);border:1px solid var(--charcoal-line);border-radius:16px;padding:clamp(1.4rem,3vw,2rem);margin-top:2rem;">
+        <h3 style="font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--stage-muted);margin-bottom:1.2rem;font-weight:500;">Account details</h3>
+        <div class="form-grid" style="margin-top:0;">
+          <div class="form-field"><label>Email</label><input data-email type="email" readonly /></div>
+          <div class="form-field"><label>Mobile number</label><input data-phone type="tel" readonly /></div>
+        </div>
+        <p class="field__hint">Both are required on every account — email for confirmations, mobile for SMS login codes.</p>
+      </div>
+
+      <h2 style="margin:2.6rem 0 1.4rem;">My tickets</h2>
+      <div data-tickets></div>
+
+      <div style="margin-top:2rem;display:flex;gap:0.8rem;flex-wrap:wrap;">
+        <a class="btn btn--solid" href="events.html">Browse events</a>
+        <button class="btn" data-signout>Sign out</button>
       </div>
     </div>
   </section>
+
+  <div class="brand-band" aria-hidden="true"></div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <img class="logo-img logo-img--footer" src="./media/logo.png" alt="Sahara Arena" />
+          <small class="footer__tag">Kuwait’s premier indoor multipurpose arena at Sahara Kuwait Resort, Sabhan — by Al Jazeera Real Estate Development.</small>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <ul>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="visit.html">Plan Your Visit</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="host-an-event.html">Host an event</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="media.html">Media Centre</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Arena</h4>
+          <ul>
+            <li><a href="booking.html">Book a ticket</a></li>
+            <li><a href="login.html">Log in</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__base">
+        <span>© 2026 Sahara Arena — Al Jazeera Real Estate Development, Kuwait</span>
+        <span>Where Kuwait Comes Alive</span>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
