@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log In — Sahara Arena</title>
+  <meta name="description" content="Sign in to your Sahara Arena account to view bookings, download tickets and manage your details." />
+  <meta name="robots" content="noindex" />
+  <link rel="canonical" href="https://rakanivar-web.github.io/RakanSaharaArena2/login.html" />
+  <link rel="alternate" hreflang="en" href="https://rakanivar-web.github.io/RakanSaharaArena2/login.html" />
+  <link rel="alternate" hreflang="ar" href="https://rakanivar-web.github.io/RakanSaharaArena2/ar/login.html" />
+  <script type="module" crossorigin src="./assets/interior-CQL4g2r_.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/interior-gQNvoScx.css">
+</head>
+<body>
+  <div class="design-ribbon">Design preview — layout only, not a live sign-in</div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="nav__brand" href="index.html" aria-label="Sahara Arena — home"><img class="logo-img logo-img--nav" src="./media/logo.png" alt="Sahara Arena" /></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="events.html">Events</a>
+      <a class="nav__link" href="visit.html">Plan Your Visit</a>
+      <a class="nav__link" href="host-an-event.html">Host an Event</a>
+      <a class="nav__link" href="about.html">About Us</a>
+    </nav>
+    <div class="nav__side">
+      <a class="nav__lang-link" href="ar/login.html" lang="ar" hreflang="ar">العربية</a>
+      <button class="nav__burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="side-backdrop" aria-hidden="true"></div>
+  <aside class="side-nav" aria-label="Menu">
+    <button class="side-nav__close" aria-label="Close menu">&times;</button>
+    <nav class="side-nav__links">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="visit.html">Plan Your Visit</a>
+      <a href="host-an-event.html">Host an Event</a>
+      <a href="about.html">About Us</a>
+    </nav>
+    <div class="side-nav__utility">
+      <span class="side-nav__label">Tickets</span>
+      <a href="booking.html">Book a Ticket</a>
+      <a href="login.html">Log In</a>
+      <a href="account.html">My Tickets</a>
+      <span class="side-nav__label" style="margin-top: 1rem;">Arena</span>
+      <a href="contact.html">Contact Us</a>
+      <a href="media.html">Media Centre</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+    <div class="side-nav__lang">
+      <span class="side-nav__label">Language</span>
+      <span class="lang-toggle"><a class="is-on" href="login.html">English</a><a href="ar/login.html" lang="ar">العربية</a></span>
+    </div>
+  </aside>
+
+  <main class="auth">
+    <div class="auth__media">
+      <img src="./media/stills/concert-cube.jpg" alt="Concept visual: the arena bowl in full production" />
+      <div class="auth__media-copy">
+        <span class="eyebrow">Your account</span>
+        <h2>Your tickets, your nights — in one place.</h2>
+      </div>
+    </div>
+
+    <div class="auth__panel">
+      <div class="auth__card">
+        <img class="logo-img" src="./media/logo.png" alt="Sahara Arena" />
+
+        <div class="auth-tabs" role="tablist" aria-label="Account">
+          <button class="auth-tab" role="tab" id="tab-login" aria-selected="true" data-auth-tab="login">Log In</button>
+          <button class="auth-tab" role="tab" id="tab-register" aria-selected="false" data-auth-tab="register">Create Account</button>
+        </div>
+
+        <!-- Log in -->
+        <form class="auth-panel" data-auth-panel="login" role="tabpanel" aria-labelledby="tab-login" novalidate>
+          <div class="form-field">
+            <label for="li-email">Email</label>
+            <input id="li-email" type="email" autocomplete="email" placeholder="you@example.com" />
+          </div>
+          <div class="form-field">
+            <label for="li-pass">Password</label>
+            <input id="li-pass" type="password" autocomplete="current-password" placeholder="••••••••" />
+          </div>
+          <div class="auth-row">
+            <label><input type="checkbox" /> Remember me</label>
+            <a href="#" data-auth-tab="forgot">Forgot password?</a>
+          </div>
+          <button class="btn btn--solid btn--block" type="button">Log In</button>
+          <div class="auth__divider">or</div>
+          <a class="btn btn--block" href="booking.html">Continue as guest</a>
+          <p class="auth__alt">New to Sahara Arena? <a href="#" data-auth-tab="register">Create an account</a></p>
+        </form>
+
+        <!-- Register -->
+        <form class="auth-panel" data-auth-panel="register" role="tabpanel" aria-labelledby="tab-register" hidden novalidate>
+          <div class="form-field">
+            <label for="rg-name">Full name</label>
+            <input id="rg-name" type="text" autocomplete="name" placeholder="First and last name" />
+          </div>
+          <div class="form-field">
+            <label for="rg-email">Email</label>
+            <input id="rg-email" type="email" autocomplete="email" placeholder="you@example.com" />
+          </div>
+          <div class="form-field">
+            <label for="rg-phone">Phone</label>
+            <input id="rg-phone" type="tel" autocomplete="tel" placeholder="+965 …" />
+          </div>
+          <div class="form-field">
+            <label for="rg-pass">Password</label>
+            <input id="rg-pass" type="password" autocomplete="new-password" placeholder="At least 8 characters" />
+          </div>
+          <label class="auth-row" style="align-items:flex-start;">
+            <input type="checkbox" style="margin-top:0.2rem;" />
+            <span>I agree to the Terms &amp; Conditions and Privacy Policy.</span>
+          </label>
+          <button class="btn btn--solid btn--block" type="button">Create Account</button>
+          <p class="auth__alt">Already have an account? <a href="#" data-auth-tab="login">Log in</a></p>
+        </form>
+
+        <!-- Forgot -->
+        <form class="auth-panel" data-auth-panel="forgot" role="tabpanel" hidden novalidate>
+          <h2 class="book-panel__title" style="font-size:1.3rem;">Reset your password</h2>
+          <p class="book-panel__sub">Enter your email and we’ll send a reset link.</p>
+          <div class="form-field">
+            <label for="fp-email">Email</label>
+            <input id="fp-email" type="email" autocomplete="email" placeholder="you@example.com" />
+          </div>
+          <button class="btn btn--solid btn--block" type="button">Send reset link</button>
+          <p class="auth__alt"><a href="#" data-auth-tab="login">Back to log in</a></p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تسجيل الدخول — صحارى أرينا</title>
+  <meta name="description" content="سجّل الدخول إلى حسابك في صحارى أرينا لعرض حجوزاتك وتنزيل تذاكرك وإدارة بياناتك." />
+  <meta name="robots" content="noindex" />
+  <link rel="canonical" href="https://rakanivar-web.github.io/RakanSaharaArena2/ar/login.html" />
+  <link rel="alternate" hreflang="en" href="https://rakanivar-web.github.io/RakanSaharaArena2/login.html" />
+  <link rel="alternate" hreflang="ar" href="https://rakanivar-web.github.io/RakanSaharaArena2/ar/login.html" />
+  <script type="module" crossorigin src="../assets/interior-CQL4g2r_.js"></script>
+  <link rel="stylesheet" crossorigin href="../assets/interior-gQNvoScx.css">
+</head>
+<body>
+  <div class="design-ribbon">معاينة تصميم — الشكل فقط، وليست شاشة دخول فعلية</div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="nav__brand" href="index.html" aria-label="صحارى أرينا — الرئيسية"><img class="logo-img logo-img--nav" src="../media/logo.png" alt="صحارى أرينا" /></a>
+    <nav class="nav__links" aria-label="التنقل الرئيسي">
+      <a class="nav__link" href="index.html">الرئيسية</a>
+      <a class="nav__link" href="events.html">الفعاليات</a>
+      <a class="nav__link" href="visit.html">خطط لزيارتك</a>
+      <a class="nav__link" href="host-an-event.html">استضف فعاليتك</a>
+      <a class="nav__link" href="about.html">من نحن</a>
+    </nav>
+    <div class="nav__side">
+      <a class="nav__lang-link" href="../login.html" lang="en" hreflang="en" dir="ltr">English</a>
+      <button class="nav__burger" aria-label="القائمة"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="side-backdrop" aria-hidden="true"></div>
+  <aside class="side-nav" aria-label="القائمة">
+    <button class="side-nav__close" aria-label="إغلاق القائمة">&times;</button>
+    <nav class="side-nav__links">
+      <a href="index.html">الرئيسية</a>
+      <a href="events.html">الفعاليات</a>
+      <a href="visit.html">خطط لزيارتك</a>
+      <a href="host-an-event.html">استضف فعاليتك</a>
+      <a href="about.html">من نحن</a>
+    </nav>
+    <div class="side-nav__utility">
+      <span class="side-nav__label">التذاكر</span>
+      <a href="booking.html">احجز تذكرة</a>
+      <a href="login.html">تسجيل الدخول</a>
+      <a href="account.html">تذاكري</a>
+      <span class="side-nav__label" style="margin-top: 1rem;">الصالة</span>
+      <a href="contact.html">تواصل معنا</a>
+      <a href="media.html">المركز الإعلامي</a>
+      <a href="faq.html">الأسئلة الشائعة</a>
+    </div>
+    <div class="side-nav__lang">
+      <span class="side-nav__label">اللغة</span>
+      <span class="lang-toggle"><a href="../login.html" lang="en">English</a><a class="is-on" href="login.html">العربية</a></span>
+    </div>
+  </aside>
+
+  <main class="auth">
+    <div class="auth__media">
+      <img src="../media/stills/concert-cube.jpg" alt="تصور مفاهيمي: قاعة العروض في إنتاج كامل" />
+      <div class="auth__media-copy">
+        <span class="eyebrow">حسابك</span>
+        <h2>تذاكرك ولياليك — في مكان واحد.</h2>
+      </div>
+    </div>
+
+    <div class="auth__panel">
+      <div class="auth__card">
+        <img class="logo-img" src="../media/logo.png" alt="صحارى أرينا" />
+
+        <div class="auth-tabs" role="tablist" aria-label="الحساب">
+          <button class="auth-tab" role="tab" id="tab-login" aria-selected="true" data-auth-tab="login">تسجيل الدخول</button>
+          <button class="auth-tab" role="tab" id="tab-register" aria-selected="false" data-auth-tab="register">إنشاء حساب</button>
+        </div>
+
+        <form class="auth-panel" data-auth-panel="login" role="tabpanel" aria-labelledby="tab-login" novalidate>
+          <div class="form-field">
+            <label for="li-email">البريد الإلكتروني</label>
+            <input id="li-email" type="email" autocomplete="email" placeholder="you@example.com" dir="ltr" />
+          </div>
+          <div class="form-field">
+            <label for="li-pass">كلمة المرور</label>
+            <input id="li-pass" type="password" autocomplete="current-password" placeholder="••••••••" />
+          </div>
+          <div class="auth-row">
+            <label><input type="checkbox" /> تذكّرني</label>
+            <a href="#" data-auth-tab="forgot">نسيت كلمة المرور؟</a>
+          </div>
+          <button class="btn btn--solid btn--block" type="button">تسجيل الدخول</button>
+          <div class="auth__divider">أو</div>
+          <a class="btn btn--block" href="booking.html">المتابعة كضيف</a>
+          <p class="auth__alt">جديد في صحارى أرينا؟ <a href="#" data-auth-tab="register">أنشئ حساباً</a></p>
+        </form>
+
+        <form class="auth-panel" data-auth-panel="register" role="tabpanel" aria-labelledby="tab-register" hidden novalidate>
+          <div class="form-field">
+            <label for="rg-name">الاسم الكامل</label>
+            <input id="rg-name" type="text" autocomplete="name" placeholder="الاسم الأول والأخير" />
+          </div>
+          <div class="form-field">
+            <label for="rg-email">البريد الإلكتروني</label>
+            <input id="rg-email" type="email" autocomplete="email" placeholder="you@example.com" dir="ltr" />
+          </div>
+          <div class="form-field">
+            <label for="rg-phone">الهاتف</label>
+            <input id="rg-phone" type="tel" autocomplete="tel" placeholder="+965 …" dir="ltr" />
+          </div>
+          <div class="form-field">
+            <label for="rg-pass">كلمة المرور</label>
+            <input id="rg-pass" type="password" autocomplete="new-password" placeholder="8 أحرف على الأقل" />
+          </div>
+          <label class="auth-row" style="align-items:flex-start;">
+            <input type="checkbox" style="margin-top:0.2rem;" />
+            <span>أوافق على الشروط والأحكام وسياسة الخصوصية.</span>
+          </label>
+          <button class="btn btn--solid btn--block" type="button">إنشاء حساب</button>
+          <p class="auth__alt">لديك حساب بالفعل؟ <a href="#" data-auth-tab="login">سجّل الدخول</a></p>
+        </form>
+
+        <form class="auth-panel" data-auth-panel="forgot" role="tabpanel" hidden novalidate>
+          <h2 class="book-panel__title" style="font-size:1.3rem;">إعادة تعيين كلمة المرور</h2>
+          <p class="book-panel__sub">أدخل بريدك الإلكتروني وسنرسل رابط إعادة التعيين.</p>
+          <div class="form-field">
+            <label for="fp-email">البريد الإلكتروني</label>
+            <input id="fp-email" type="email" autocomplete="email" placeholder="you@example.com" dir="ltr" />
+          </div>
+          <button class="btn btn--solid btn--block" type="button">أرسل رابط إعادة التعيين</button>
+          <p class="auth__alt"><a href="#" data-auth-tab="login">العودة لتسجيل الدخول</a></p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
